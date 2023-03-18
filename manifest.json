@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Anki Text Adder",
+  "version": "1.0",
+  "description": "Add selected text to Anki with right-click context menu",
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "action": {
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
