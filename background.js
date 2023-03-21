@@ -151,21 +151,10 @@ async function addTextToAnki(info) {
     });
 }
 
-let contextMenuCreated = false;
+self.addTextToAnki = addTextToAnki;
 
-if (!contextMenuCreated) {
-  chrome.contextMenus.create({
-    title: "Add to Anki",
-    contexts: ["selection"],
-    id: "add_to_anki",
-  });
-  contextMenuCreated = true;
-}
-
-chrome.contextMenus.onClicked.addListener(async (info, tab) => {
-  if (info.menuItemId === "add_to_anki") {
-    const text = info.selectionText;
-    addTextToAnki({ selectionText: text });
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === "addTextToAnki") {
+    addTextToAnki({ selectionText: request.text });
   }
 });
-

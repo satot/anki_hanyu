@@ -9,7 +9,7 @@ The codes use Google Translate API for obtaining the translation of a word as we
 4. Open chrome://extensions and click "Load unpacked", then select the directory of the codes
 
 ## How to use
-- Select a word on Chrome and right click, then select "Add to anki" 
+- Select a word on Chrome and a popup icon will show up just next to it. Click it to add to Anki!
 
 ## Disclaimer
 - Please do not reach out to me if you find any defects or problems, please ask your AI for the support :)
