@@ -5,11 +5,22 @@ The codes use Google Translate API for obtaining the translation of a word as we
 ## Installation
 1. Clone the code to your local
 2. Download Anki client app and AnkiConnect (Don't forget to restart Anki after installing Add-Ons)
-3. Obtain an API key for Google Translate API and paste it into background.js file
-4. Open chrome://extensions and click "Load unpacked", then select the directory of the codes
+3. Obtain an API key for Google Translate API, Text-to-Speech API and paste it into background.js file
+(Do not forget "enable" Google Translate API, Text-to-Speech API)
+4. Create a new Deck "Chinese" in Anki
+5. Open chrome://extensions and click "Load unpacked", then select the directory of the codes
 
 ## How to use
-- Select a word on Chrome and a popup icon will show up just next to it. Click it to add to Anki!
+- Select a Chinese word on Chrome and a popup icon will show up just next to it. 
+<img width="275" alt="image" src="https://user-images.githubusercontent.com/22290203/227428464-4082b32e-5da6-42df-ab26-accf85be0240.png">
+- Click it to add to Anki!
+
+- Then, automatically the word information is registered in Anki's "Chinese" deck.
+<img width="517" alt="image" src="https://user-images.githubusercontent.com/22290203/227428538-c37d8783-5505-4748-bb20-3af63e1090c0.png">
+
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/22290203/227428601-574868a8-2752-4c0e-8a69-454ecf0780b0.png">
+
 
 ## Disclaimer
 - Please do not reach out to me if you find any defects or problems, please ask your AI for the support :)
+
