@@ -12,6 +12,14 @@ document.addEventListener('mouseup', () => {
   }
 });
 
+document.addEventListener('keydown', () => {
+  try {
+    removePopup();
+  } catch (error) {
+    console.error('An error occurred:', error);
+  }
+});
+
 function createPopup(text) {
   removePopup();
 
